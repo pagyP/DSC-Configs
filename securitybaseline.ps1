@@ -4,7 +4,7 @@ Configuration securitybaseline
 	Import-DSCResource -ModuleName 'PSDesiredStateConfiguration'
 	Import-DSCResource -ModuleName 'AuditPolicyDSC'
     Import-DSCResource -ModuleName 'SecurityPolicyDSC'
-    Import-DscResource -ModuleName xStorage
+    Import-DscResource -ModuleName 'xStorage'
 	Node localhost
 	{
 	 	Registry "CCE-37615-2: Ensure 'Accounts: Limit local account use of blank passwords to console logon only' is set to 'Enabled'"
