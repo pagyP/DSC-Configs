@@ -1,4 +1,4 @@
-Configuration diskinit
+Configuration dcinit
 {
     Import-DSCResource -ModuleName StorageDsc
     Import-DscResource -ModuleName 'PSDesiredStateConfiguration'
@@ -9,12 +9,6 @@ Configuration diskinit
     {
         Ensure = 'Present'
         Name = 'AD-Domain-Services'
-    }
-
-        WindowsFeature ADDSRsatTools
-    {
-        Ensure = 'Present'
-        Name = 'RSAT-ADDS'
     }
         WaitForDisk Disk2
         {
